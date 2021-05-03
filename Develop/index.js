@@ -40,12 +40,12 @@ const questions = [
     {
         type: "input",
         name: "installation",
-        message: "Please enter the installation instructions:"
+        message: "Please enter the installation instructions (e.g. npm i):"
     },
     {
         type: "input",
         name: "test",
-        message: "Please enter the test instructions"
+        message: "Please enter the test instructions (e.g. npm test):"
     },
     {
         type: "input",
