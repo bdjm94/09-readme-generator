@@ -3,11 +3,11 @@
 function renderLicenseBadge(license) {
     if (license.toUpperCase() == "MIT") {
         return "https://img.shields.io/badge/License-MIT-red";
-    } else if (license.toUpperCase() == "APACHE 2.0") {
+    } else if (license.toUpperCase() == "APACHE") {
         return "https://img.shields.io/badge/License-APACHE%202.0-brightgreen";
-    } else if (license.toUpperCase() == "GPL 3.0") {
+    } else if (license.toUpperCase() == "GPL") {
         return "https://img.shields.io/badge/License-GPL%203.0-blue";
-    } else if (license.toUpperCase() == "BSD 3") {
+    } else if (license.toUpperCase() == "BSD") {
         return "https://img.shields.io/badge/License-BSD%203-orange";
     } else {
         return "";
