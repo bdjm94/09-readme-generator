@@ -3,11 +3,11 @@
 function renderLicenseBadge(license) {
     if (license.toUpperCase() == "MIT") {
         return "https://img.shields.io/badge/License-MIT-red";
-    } else if (license.toUpperCase() == "APACHE") {
+    } else if (license.toUpperCase() == "APACHE 2.0") {
         return "https://img.shields.io/badge/License-APACHE%202.0-brightgreen";
-    } else if (license.toUpperCase() == "GPL") {
+    } else if (license.toUpperCase() == "GPL 3.0") {
         return "https://img.shields.io/badge/License-GPL%203.0-blue";
-    } else if (license.toUpperCase() == "BSD") {
+    } else if (license.toUpperCase() == "BSD 3") {
         return "https://img.shields.io/badge/License-BSD%203-orange";
     } else {
         return "";
@@ -19,11 +19,11 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
     if (license.toUpperCase() == "MIT") {
         return "https://opensource.org/licenses/MIT";
-    } else if (license.toUpperCase() == "APACHE") {
+    } else if (license.toUpperCase() == "APACHE 2.0") {
         return "https://opensource.org/licenses/Apache-2.0";
-    } else if (license.toUpperCase() == "GPL") {
+    } else if (license.toUpperCase() == "GPL 3.0") {
         return "https://www.gnu.org/licenses/gpl-3.0.en.html";
-    } else if (license.toUpperCase() == "BSD") {
+    } else if (license.toUpperCase() == "BSD 3") {
         return "https://opensource.org/licenses/BSD-3-Clause";
     } else {
         return "";
@@ -35,11 +35,11 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
     if (license.toUpperCase() == "MIT") {
         return "MIT License";
-    } else if (license.toUpperCase() == "APACHE") {
+    } else if (license.toUpperCase() == "APACHE 2.0") {
         return "Apache 2.0 License";
-    } else if (license.toUpperCase() == "GPL") {
+    } else if (license.toUpperCase() == "GPL 3.0") {
         return "GPL 3.0 License";
-    } else if (license.toUpperCase() == "BSD") {
+    } else if (license.toUpperCase() == "BSD 3") {
         return "BSD-3-Clause License";
     } else {
         return "";
@@ -48,8 +48,7 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# Title
-  ${data.title}
+  return `# ${data.title}
 
   [![License](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
 
