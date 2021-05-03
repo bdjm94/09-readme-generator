@@ -72,7 +72,15 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    userPrompt().then((answers) => {
+        writeToFile("README.md", generateMarkdown(answers));
+    }).catch(
+        (err) => {
+            console.log(err + " Something went wrong.");
+        }
+    );
+}
 
 // Function call to initialize app
 init();
