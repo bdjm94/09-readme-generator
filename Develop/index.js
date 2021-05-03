@@ -59,8 +59,17 @@ const questions = [
     }
 ];
 
+const userPrompt = () => {
+    return inquirer.prompt(questions);
+}
+
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if (err) console.log(err);
+        console.log("Successfully genereated a good README.md");
+    });
+}
 
 // TODO: Create a function to initialize app
 function init() {}
