@@ -17,5 +17,5 @@ Preview of the README in a GitHub repo
 ![Completed README](./assets/images/readme-2.JPG)
 
 ## Credits
-- [Video of README Generator in Use]
+- [Video of README Generator in Use](https://drive.google.com/file/d/1nVTYdQXvMoMZKJHNXfeCN-Od5-DodV8T/view?usp=sharing)
 - [Inquirer.js](https://www.npmjs.com/package/inquirer)
